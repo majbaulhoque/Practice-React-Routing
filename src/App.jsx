@@ -1,5 +1,5 @@
 import Nav from "./components/Nav/Nav"
-import DaisyNav from "./components/Navbar/DaisyNav"
+import PriceOptions from "./components/PriceOptions/PriceOptions"
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
       {/* <DaisyNav></DaisyNav> */}
       <Nav></Nav>
+      <PriceOptions></PriceOptions>
     </>
   )
 }
