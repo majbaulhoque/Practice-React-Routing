@@ -1,3 +1,4 @@
+import LineChart from "./components/LineChart/LineChart"
 import Nav from "./components/Nav/Nav"
 import PriceOptions from "./components/PriceOptions/PriceOptions"
 
@@ -9,6 +10,7 @@ function App() {
       {/* <DaisyNav></DaisyNav> */}
       <Nav></Nav>
       <PriceOptions></PriceOptions>
+      <LineChart></LineChart>
     </>
   )
 }
