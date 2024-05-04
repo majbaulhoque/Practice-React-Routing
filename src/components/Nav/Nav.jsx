@@ -12,16 +12,18 @@ const Nav = () => {
     ];
 
     const [open, setOpen] = useState(false);
+
     return (
-        <nav>
-            <div className="md:hidden" onClick={() => setOpen(!open)}>
+        <nav className="text-black bg-yellow-200 p-6">
+            <div onClick={() => setOpen(!open)}>
                 {
-                    open === true ? <HiX className="text-xl"/>
+                    open === true ?
+                    <HiX className="text-2xl"/>
                     :
-                    <HiMenuAlt1 className="text-xl"/>
+                    <HiMenuAlt1 className="md:hidden text-2xl"/>
                 }
-                </div>
-            <ul className="md:flex">
+            </div>
+            <ul className={`md:flex absolute md:static px-6 duration-1000 bg-yellow-200 ${open ? 'top-16' : '-top-60'}`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
